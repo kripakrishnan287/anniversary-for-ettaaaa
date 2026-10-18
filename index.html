@@ -6,6 +6,11 @@
 
 <title>Happy First Anniversary Ettuuu ❤️</title>
 
+<!-- Romantic Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
 <style>
 * {
   box-sizing: border-box;
@@ -13,7 +18,7 @@
 
 body {
   margin: 0;
-  font-family: 'Comic Sans MS', 'Segoe UI', cursive;
+  font-family: 'Lora', serif;
   background: linear-gradient(135deg, #ffd6e8, #fff0f6);
   min-height: 100vh;
   overflow: hidden;
@@ -59,19 +64,26 @@ body {
 
 h1 {
   color: #e63973;
-  font-size: 27px;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 34px;
 }
 
 p {
   line-height: 1.8;
 }
 
+.welcome-card p {
+  font-family: 'Lora', serif;
+  font-size: 15px;
+}
+
 button {
   padding: 13px 24px;
   border: none;
   border-radius: 30px;
-  font-family: inherit;
-  font-size: 16px;
+  font-family: 'Lora', serif;
+  font-size: 15px;
   cursor: pointer;
   background: #ff4d88;
   color: white;
@@ -108,12 +120,15 @@ button:active {
 
 .letter-card h1 {
   text-align: center;
-  font-size: 25px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 36px;
+  font-weight: 700;
   margin-top: 0;
   margin-bottom: 22px;
 }
 
 .letter {
+  font-family: 'Lora', serif;
   font-size: 16px;
   line-height: 1.95;
 }
@@ -125,18 +140,22 @@ button:active {
 .signature {
   text-align: center;
   color: #e63973;
-  font-size: 18px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 27px;
+  font-weight: 700;
   margin-top: 25px;
 }
 
 .decor {
   color: #ff8ab3;
+  font-family: 'Lora', serif;
   font-size: 23px;
   letter-spacing: 8px;
   text-align: center;
   margin-bottom: 12px;
 }
 
+/* Mobile screen adjustments */
 @media (max-width: 380px) {
   .welcome-card {
     padding: 28px 17px;
@@ -149,8 +168,13 @@ button:active {
   .letter {
     font-size: 15px;
   }
+
+  .letter-card h1 {
+    font-size: 32px;
+  }
 }
 
+/* Respect reduced-motion settings */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
@@ -221,7 +245,7 @@ button:active {
     </div>
 
     <div class="signature">
-      ❤️ Eppozhum ningalude Kripa ❤️
+      Eppozhum ningalude Kripa ❤️
     </div>
 
     <div class="decor" style="margin-top: 20px;">
