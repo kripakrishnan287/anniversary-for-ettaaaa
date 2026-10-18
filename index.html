@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy First Anniversary Ettuuu ❤️</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', 'Segoe UI', cursive;
+  background: linear-gradient(135deg, #ffd6e8, #fff0f6);
+  min-height: 100vh;
+  overflow: hidden;
+  color: #444;
+}
+
+/* Two pages */
+.page {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.page.active {
+  display: flex;
+  animation: fadeIn 0.7s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* First page */
+.welcome-card {
+  background: white;
+  padding: 35px 22px;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(200, 70, 120, 0.18);
+  width: 100%;
+  max-width: 370px;
+}
+
+h1 {
+  color: #e63973;
+  font-size: 27px;
+}
+
+p {
+  line-height: 1.8;
+}
+
+button {
+  padding: 13px 24px;
+  border: none;
+  border-radius: 30px;
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  background: #ff4d88;
+  color: white;
+  box-shadow: 0 5px 12px rgba(255, 77, 136, 0.2);
+  transition: transform 0.2s, background 0.2s;
+}
+
+button:hover {
+  background: #e63973;
+  transform: scale(1.04);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Second page */
+#page2 {
+  overflow-y: auto;
+  align-items: flex-start;
+  padding: 22px 14px;
+}
+
+.letter-card {
+  background: rgba(255, 255, 255, 0.96);
+  width: 100%;
+  max-width: 560px;
+  margin: auto;
+  padding: 27px 23px;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(200, 70, 120, 0.16);
+  text-align: left;
+}
+
+.letter-card h1 {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+
+.letter {
+  font-size: 16px;
+  line-height: 1.95;
+}
+
+.letter p {
+  margin: 0 0 18px;
+}
+
+.signature {
+  text-align: center;
+  color: #e63973;
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+.decor {
+  color: #ff8ab3;
+  font-size: 23px;
+  letter-spacing: 8px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 380px) {
+  .welcome-card {
+    padding: 28px 17px;
+  }
+
+  .letter-card {
+    padding: 23px 17px;
+  }
+
+  .letter {
+    font-size: 15px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1: Welcome -->
+<section class="page active" id="page1">
+  <div class="welcome-card">
+    <div class="decor">♡ ♡ ♡</div>
+
+    <h1>Hey Ettuuuuu 😁</h1>
+
+    <p>I'm back with another letter 😉</p>
+
+    <button onclick="openLetter()">
+      Open your letter 💌
+    </button>
+  </div>
+</section>
+
+<!-- PAGE 2: Anniversary Letter -->
+<section class="page" id="page2">
+  <div class="letter-card">
+
+    <div class="decor">♡ ♡ ♡</div>
+
+    <h1>Happy first anniversary ettaaaa ❤️</h1>
+
+    <div class="letter">
+
+      <p>
+        I can't believe it's 1 year already.. sherikum it's 1 year
+        of you bearing me 😅 ende virthiketta mood swings um,
+        ende terrible cooking um, pinne ee unemployed person ne
+        meikunnadhu thane oru task alee😂😂 elaathinum thankkk
+        youuuu soooooo much 😘😘
+      </p>
+
+      <p>
+        Ningal ilairnengil njan endhu cheyyum ettuuu 🥺 eniki
+        ningal ilathe pattunilla 🥲 it's like I'm so used to ur
+        presence alee so it's becoming difficult for me to stay
+        away from you.. adhukondale ee 1 week trip nu polum njan
+        otti vannadhu 😅😁
+      </p>
+
+      <p>
+        Pinne njan ningale koree irritate cheiyunindalee eniki
+        ariyam I'm trying not to pakshe chelapo angane aayi
+        pogunnadha 🥲 adhinoke sorry😐
+      </p>
+
+      <p>
+        Pinne njan oru video edit cheidhitindu 😁 so after this
+        letter adhu open cheidhal madhii ttoo 😉
+      </p>
+
+      <p>
+        Apo elaam paranja pole okay? Sheri apo video kanditu varuu
+      </p>
+
+    </div>
+
+    <div class="signature">
+      ❤️ Eppozhum ningalude Kripa ❤️
+    </div>
+
+    <div class="decor" style="margin-top: 20px;">
+      ♡ ♡ ♡
+    </div>
+
+  </div>
+</section>
+
+<script>
+function openLetter() {
+  document.getElementById('page1').classList.remove('active');
+  document.getElementById('page2').classList.add('active');
+
+  // Start the letter from the top
+  document.getElementById('page2').scrollTop = 0;
+}
+</script>
+
+</body>
+</html>
